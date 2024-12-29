@@ -89,7 +89,7 @@ const Index = () => {
     if (pathname === '/random-data') {
       const data = JSON.parse(localStorage.getItem('user-random-data')!);
       setData(data);
-      setCount(data.length);
+      setCount(data?.length || 1);
     } else {
       localStorage.removeItem('user-random-data');
     }
