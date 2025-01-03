@@ -1,10 +1,4 @@
-import {
-  BetweenHorizontalEnd,
-  Component,
-  Database,
-  Rainbow,
-  Shuffle,
-} from 'lucide-react';
+import { BetweenHorizontalEnd, Database, Rainbow, Shuffle } from 'lucide-react';
 
 import {
   Sidebar,
@@ -39,12 +33,6 @@ const items = [
     title: 'Random ID Generate',
     url: '/random-id',
     icon: Shuffle,
-  },
-
-  {
-    title: 'Skeletons',
-    url: '/skeletons',
-    icon: Component,
   },
 ];
 
