@@ -1,4 +1,11 @@
-import { BetweenHorizontalEnd, Database, Rainbow, Shuffle } from 'lucide-react';
+import {
+  BetweenHorizontalEnd,
+  Database,
+  MousePointer,
+  Rainbow,
+  Section,
+  Shuffle,
+} from 'lucide-react';
 
 import {
   Sidebar,
@@ -25,14 +32,24 @@ const items = [
     icon: Rainbow,
   },
   {
-    title: 'Random Data Generate',
-    url: '/random-data',
+    title: 'Fake Data Generate',
+    url: '/random-fake-data',
     icon: BetweenHorizontalEnd,
   },
   {
     title: 'Random ID Generate',
-    url: '/random-id',
+    url: '/random-id-generate',
     icon: Shuffle,
+  },
+  {
+    title: 'CSS Cursors',
+    url: '/css-cursors',
+    icon: MousePointer,
+  },
+  {
+    title: 'Symbols Collection',
+    url: '/symbols-collection',
+    icon: Section,
   },
 ];
 
