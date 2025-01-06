@@ -30,7 +30,7 @@ RandCraft is your go-to platform for generating random data, colors, IDs, and ha
 
 ## Tech Stack
 
-- **Frontend:** React with Vite
+- **Frontend:** Nextjs
 - **Styling:** Tailwind CSS
 - **Icons:** Lucide React
 
