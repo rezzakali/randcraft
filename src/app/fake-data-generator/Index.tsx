@@ -47,7 +47,7 @@ const Index = () => {
       return fields.reduce((acc: GeneratedData, field) => {
         switch (field) {
           case 'name':
-            acc[field] = faker.name.fullName();
+            acc[field] = faker.person.fullName();
             break;
           case 'email':
             acc[field] = faker.internet.email().toLocaleLowerCase();
@@ -56,16 +56,16 @@ const Index = () => {
             acc[field] = faker.phone.number({ style: 'national' });
             break;
           case 'address':
-            acc[field] = faker.address.streetAddress();
+            acc[field] = faker.location.streetAddress();
             break;
           case 'company':
             acc[field] = faker.company.name();
             break;
           case 'jobTitle':
-            acc[field] = faker.name.jobTitle();
+            acc[field] = faker.person.jobTitle();
             break;
           case 'username':
-            acc[field] = faker.internet.userName();
+            acc[field] = faker.internet.username();
             break;
           case 'password':
             acc[field] = faker.internet.password();
@@ -83,17 +83,23 @@ const Index = () => {
         return acc;
       }, {});
     });
-    localStorage.setItem('user-random-data', JSON.stringify(newData));
+    if (typeof window !== 'undefined') {
+      window.localStorage.setItem('user-random-data', JSON.stringify(newData));
+    }
     setData(newData);
   };
 
   useEffect(() => {
-    if (pathname === '/random-data') {
-      const data = JSON.parse(localStorage.getItem('user-random-data')!);
-      setData(data);
-      setCount(data?.length || 1);
-    } else {
-      localStorage.removeItem('user-random-data');
+    if (typeof window !== 'undefined') {
+      if (pathname === '/random-data') {
+        const data = JSON.parse(
+          window.localStorage.getItem('user-random-data')!
+        );
+        setData(data);
+        setCount(data?.length || 1);
+      } else {
+        window.localStorage.removeItem('user-random-data');
+      }
     }
   }, [pathname]);
 
