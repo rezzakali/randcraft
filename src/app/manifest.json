@@ -1,0 +1,36 @@
+{
+    "name": "Randcraft - Your Random Color & Design Crafting Tool",
+    "short_name": "Randcraft",
+    "description": "Randcraft is a comprehensive tool designed to effortlessly generate random colors, shades, and designs and fake data. It also includes a collection of symbols and features an image compressor and converter.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4a90e2",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "any",
+            "type": "image/x-icon"
+        }
+    ],
+    "categories": [
+        "fake data generate",
+        "endcode/decode  (base64)",
+        "color shades",
+        "image compressor/converter",
+        "symbols",
+        "cursors"
+    ],
+    "lang": "en",
+    "scope": "/",
+    "features": [
+        "Random Color and Shade Generation",
+        "Symbols Collection",
+        "Gradient Generator",
+        "Fake Data Generator",
+        "Base64 Encode/Decode",
+        "Image Compressor/Converter"
+    ],
+    "dir": "ltr"
+}
