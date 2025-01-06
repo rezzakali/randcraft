@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     title: 'RandCraft - CSS Cursors',
     description:
       'Discover a variety of CSS cursors with RandCraft. Copy and use them in your projects easily.',
-    url: 'https://www.randcraft.netlify.app/css-cursors',
+    url: 'https://randcraft.netlify.app/css-cursors',
     siteName: 'RandCraft',
     images: [
       {
-        url: 'https://www.randcraft.netlify.app/cursors.png',
+        url: 'https://randcraft.netlify.app/cursors.png',
         width: 800,
         height: 600,
         alt: 'RandCraft CSS Cursors',

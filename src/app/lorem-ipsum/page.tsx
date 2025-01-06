@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     title: 'RandCraft - Lorem Ipsum Generator',
     description:
       'Generate Lorem Ipsum text with RandCraft. Customize paragraphs, sentences, and words for your needs.',
-    url: 'https://www.randcraft.netlify.app/lorem-ipsum',
+    url: 'https://randcraft.netlify.app/lorem-ipsum',
     siteName: 'RandCraft',
     images: [
       {
-        url: 'https://www.randcraft.netlify.app/lorem-ipsum.png',
+        url: 'https://randcraft.netlify.app/lorem-ipsum.png',
         width: 800,
         height: 600,
         alt: 'RandCraft Lorem Ipsum Generator',

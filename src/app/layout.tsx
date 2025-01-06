@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: 'RandCraft - Home',
     description:
       'Welcome to RandCraft, your ultimate destination for random crafting ideas and inspiration.',
-    url: 'https://www.randcraft.netlify.app',
+    url: 'https://randcraft.netlify.app',
     siteName: 'RandCraft',
     images: [
       {
-        url: 'https://www.randcraft.netlify.app/randcraft.png',
+        url: 'https://randcraft.netlify.app/randcraft.png',
         width: 800,
         height: 600,
         alt: 'RandCraft',

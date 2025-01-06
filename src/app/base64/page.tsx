@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     title: 'RandCraft - Base64 Tools',
     description:
       'Explore RandCraft for all your Base64 encoding and decoding needs, along with other random crafting tools.',
-    url: 'https://www.randcraft.netlify.app/base64',
+    url: 'https://randcraft.netlify.app/base64',
     siteName: 'RandCraft',
     images: [
       {
-        url: 'https://www.randcraft.netlify.app/decode.png',
+        url: 'https://randcraft.netlify.app/decode.png',
         width: 800,
         height: 600,
         alt: 'RandCraft Base64 Tools',

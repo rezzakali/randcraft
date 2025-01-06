@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     title: 'RandCraft - Symbols Collection',
     description:
       'Discover a comprehensive collection of symbols on RandCraft. Perfect for all your Base64 encoding, decoding, and other random crafting needs.',
-    url: 'https://www.randcraft.netlify.app/symbols-collection',
+    url: 'https://randcraft.netlify.app/symbols-collection',
     siteName: 'RandCraft',
     images: [
       {
-        url: 'https://www.randcraft.netlify.app/symbols.png',
+        url: 'https://randcraft.netlify.app/symbols.png',
         width: 800,
         height: 600,
         alt: 'RandCraft Symbols Collection',

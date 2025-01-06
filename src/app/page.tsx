@@ -1,5 +1,29 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'RandCraft - Home',
+  description:
+    'Welcome to RandCraft, your ultimate destination for random crafting ideas and inspiration.',
+  openGraph: {
+    title: 'RandCraft - Home',
+    description:
+      'Welcome to RandCraft, your ultimate destination for random crafting ideas and inspiration.',
+    url: 'https://randcraft.netlify.app',
+    siteName: 'RandCraft',
+    images: [
+      {
+        url: 'https://randcraft.netlify.app/randcraft.png',
+        width: 800,
+        height: 600,
+        alt: 'RandCraft',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+};
 
 const items = [
   {
