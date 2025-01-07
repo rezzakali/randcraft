@@ -24,9 +24,14 @@ const Index = () => {
     setGeneratedPassword(password);
   }
 
-  function copyToClipboard() {
-    navigator.clipboard.writeText(generatedPassword);
-    toast({ description: 'Password copied to clipboard!' });
+  async function copyToClipboard() {
+    try {
+      await navigator.clipboard.writeText(generatedPassword);
+      toast({ description: 'Password copied to clipboard!' });
+    } catch (error) {
+      console.log('🚀 ~ copyToClipboard ~ error:', error);
+      toast({ description: 'Failed to copy!' });
+    }
   }
 
   function generatePassword(
@@ -121,7 +126,7 @@ const Index = () => {
 
         {/* Generated Password */}
         <div className="p-2 rounded-md flex justify-between items-center dark:bg-[#030712] bg-white">
-          <span>{generatedPassword}</span>
+          <p className="break-all">{generatedPassword}</p>
           <Copy onClick={copyToClipboard} className="cursor-pointer" />
         </div>
       </div>

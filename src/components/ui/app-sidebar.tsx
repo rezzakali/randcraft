@@ -1,6 +1,7 @@
 import {
   BetweenHorizontalEnd,
   Database,
+  Globe,
   Images,
   MousePointer,
   Palette,
@@ -68,6 +69,11 @@ const items = [
     title: 'Password Generator',
     url: '/password-generator',
     icon: RectangleEllipsis,
+  },
+  {
+    title: 'Favicon Generator',
+    url: '/favicon-generator',
+    icon: Globe,
   },
 ];
 

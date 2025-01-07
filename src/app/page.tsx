@@ -80,6 +80,12 @@ const items = [
     description: 'Generate strong and secure passwords.',
     link: '/password-generator',
   },
+  {
+    title: 'Favicon Generator',
+    image: '/favicon.png',
+    description: 'Convert images to favicon or png with multiple resolutions',
+    link: '/favicon-generator',
+  },
 ];
 
 export default function Home() {

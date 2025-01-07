@@ -40,6 +40,12 @@ RandCraft is your go-to platform for generating random data, colors, IDs, and ha
 - User can select different options like symbols, uppercase,lowercase.
 - One-click copy functionality for easy use.
 
+### 7. **Favicon Generator**
+
+- Convert images to favicon with multiple resolutions.
+- Download specefic resolution favicon.
+- Download all images at ones.
+
 ## Tech Stack
 
 - **Frontend:** Nextjs

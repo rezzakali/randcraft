@@ -111,17 +111,21 @@ const Index = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-between">
+      <div>
         <h3 className="text-2xl font-semibold tracking-tight">
           Generate Fake User Data
         </h3>
-        <div className="flex items-center gap-2 mt-2">
+        <div
+          className="flex items-center gap-2
+        justify-end mx-auto"
+        >
           <Input
             type="number"
             value={count}
             onChange={(e) => setCount(Number(e.target.value))}
             placeholder="Number of entries"
             min="1"
+            className="w-36"
           />
           <Button size={'sm'} onClick={generateData}>
             Generate
