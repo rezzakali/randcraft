@@ -34,6 +34,12 @@ RandCraft is your go-to platform for generating random data, colors, IDs, and ha
 - A categorized collection of symbols like arrows, currency, mathematical, etc.
 - One-click copy functionality for easy use in documents or coding.
 
+### 7. **Password Generator**
+
+- Generate secure and strong password.
+- User can select different options like symbols, uppercase,lowercase.
+- One-click copy functionality for easy use.
+
 ## Tech Stack
 
 - **Frontend:** Nextjs
