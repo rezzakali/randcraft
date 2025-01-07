@@ -47,13 +47,13 @@ const items = [
   {
     title: 'Base64 Encode/Decode',
     image: '/decode.png',
-    description: 'Encode and decode Base64 strings easily.',
+    description: 'Easily encode and decode Base64 strings.',
     link: '/base64',
   },
   {
     title: 'CSS Cursors',
     image: '/cursors.png',
-    description: 'Browse and select custom CSS cursors.',
+    description: 'Browse and select from a variety of custom CSS cursors.',
     link: '/css-cursors',
   },
   {
@@ -73,6 +73,12 @@ const items = [
     image: '/picture.png',
     description: 'Compress and convert images to various formats.',
     link: '/image-compressor',
+  },
+  {
+    title: 'Password Generator',
+    image: '/password.png',
+    description: 'Generate strong and secure passwords.',
+    link: '/password-generator',
   },
 ];
 

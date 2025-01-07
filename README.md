@@ -24,9 +24,15 @@ RandCraft is your go-to platform for generating random data, colors, IDs, and ha
 - Quickly encode text to Base64 or decode Base64 to plain text.
 - Ideal for working with binary data or web-safe strings.
 
-### 5. **Utility Expansion**
+### 5. **Image Compressor/Converter**
 
-- New tools are being added regularly to enhance developer productivity.
+- Tools to compress images and convert the extension of provided image.
+- Allow users to download the processed images with one click.
+
+### 6. **Symbols Collection**
+
+- A categorized collection of symbols like arrows, currency, mathematical, etc.
+- One-click copy functionality for easy use in documents or coding.
 
 ## Tech Stack
 

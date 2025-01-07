@@ -5,6 +5,7 @@ import {
   MousePointer,
   Palette,
   Rainbow,
+  RectangleEllipsis,
   Section,
   Shuffle,
 } from 'lucide-react';
@@ -62,6 +63,11 @@ const items = [
     title: 'Image Compressor',
     url: '/image-compressor',
     icon: Images,
+  },
+  {
+    title: 'Password Generator',
+    url: '/password-generator',
+    icon: RectangleEllipsis,
   },
 ];
 
