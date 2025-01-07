@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { useToast } from '@/hooks/use-toast';
 import { faker } from '@faker-js/faker';
 import { Copy, Plus, Trash2 } from 'lucide-react';
 import { usePathname } from 'next/navigation';
@@ -24,6 +25,7 @@ const Index = () => {
   const [count, setCount] = useState(1);
 
   const pathname = usePathname();
+  const { toast } = useToast();
 
   const addField = () => {
     setFields([...fields, '']);
@@ -43,6 +45,10 @@ const Index = () => {
   };
 
   const generateData = () => {
+    if (count > 5000) {
+      toast({ title: 'Count should not be greater than 5000' });
+      return;
+    }
     const newData = Array.from({ length: count }, () => {
       return fields.reduce((acc: GeneratedData, field) => {
         switch (field) {
@@ -151,10 +157,14 @@ const Index = () => {
           <code className="whitespace-pre-wrap">
             {JSON.stringify(data, null, 2)}
           </code>
-          <Copy
-            className="absolute top-2 right-2 cursor-pointer"
-            onClick={() => navigator.clipboard.writeText(JSON.stringify(data))}
-          />
+          {data.length > 0 && (
+            <Copy
+              className="absolute top-2 right-2 cursor-pointer"
+              onClick={() =>
+                navigator.clipboard.writeText(JSON.stringify(data))
+              }
+            />
+          )}
         </pre>
       </div>
     </div>
