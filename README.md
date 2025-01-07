@@ -31,7 +31,7 @@ RandCraft is your go-to platform for generating random data, colors, IDs, and ha
 ## Tech Stack
 
 - **Frontend:** Nextjs
-- **Styling:** Tailwind CSS
+- **Styling:** Tailwind CSS (Shadcn)
 - **Icons:** Lucide React
 
 ## Installation
@@ -64,7 +64,7 @@ Follow these steps to run RandCraft locally:
 
 5. Open your browser and visit:
    ```
-   http://localhost:5173
+   http://localhost:3000
    ```
 
 ## Usage
