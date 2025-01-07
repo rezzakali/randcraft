@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button'; // Import your Button component
 import imageCompression from 'browser-image-compression';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import ImageFormatConverter from './ImageFormatConverter';
 
@@ -83,10 +84,12 @@ const ImageCompressor = () => {
             <p className="text-sm">
               Size: {(originalImage.size / 1024).toFixed(2)} KB
             </p>
-            <img
+            <Image
               src={URL.createObjectURL(originalImage)}
               alt="Original"
               className="max-w-xs mt-2 rounded-md border"
+              width={500}
+              height={500}
             />
           </div>
         )}
@@ -105,10 +108,12 @@ const ImageCompressor = () => {
               </Button>
             </div>
             <p>Size: {(compressedImage.size / 1024).toFixed(2)} KB</p>
-            <img
+            <Image
               src={URL.createObjectURL(compressedImage)}
               alt="Compressed"
               className="max-w-xs mt-2"
+              width={500}
+              height={500}
             />
           </div>
         )}

@@ -7,6 +7,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { saveAs } from 'file-saver';
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const ImageFormatConverter = () => {
@@ -29,7 +30,7 @@ const ImageFormatConverter = () => {
     const reader = new FileReader();
 
     reader.onload = (event) => {
-      const img = new Image();
+      const img = new window.Image();
       img.src = event.target?.result as string;
 
       img.onload = () => {
@@ -116,10 +117,12 @@ const ImageFormatConverter = () => {
       {convertedImage && (
         <div className="mt-4">
           <h2 className="text-lg font-semibold">Converted Image:</h2>
-          <img
+          <Image
             src={convertedImage}
             alt="Converted"
             className="max-w-xs border mt-2"
+            width={500}
+            height={500}
           />
           <Button
             className="mt-2"
