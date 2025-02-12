@@ -54,7 +54,7 @@ const OCRComponent = () => {
       ) : (
         text && (
           <div className="p-4 bg-sidebar-accent rounded relative">
-            <p className="p-4 shadow-md border rounded">{text}</p>
+            <p className="p-4 rounded">{text}</p>
             <Copy
               className="absolute top-2 right-2 cursor-pointer"
               onClick={() => navigator.clipboard.writeText(text)}
