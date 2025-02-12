@@ -1,6 +1,7 @@
 import {
   BetweenHorizontalEnd,
   Database,
+  FolderSearch,
   Globe,
   Images,
   MousePointer,
@@ -74,6 +75,11 @@ const items = [
     title: 'Favicon Generator',
     url: '/favicon-generator',
     icon: Globe,
+  },
+  {
+    title: 'OCR',
+    url: '/ocr',
+    icon: FolderSearch,
   },
 ];
 

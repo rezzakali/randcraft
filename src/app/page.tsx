@@ -86,6 +86,13 @@ const items = [
     description: 'Convert images to favicon or png with multiple resolutions',
     link: '/favicon-generator',
   },
+  {
+    title: 'OCR',
+    image: '/ocr.png',
+    description:
+      'Extract text from images using Optical Character Recognition.',
+    link: '/ocr',
+  },
 ];
 
 export default function Home() {
