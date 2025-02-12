@@ -46,6 +46,11 @@ RandCraft is your go-to platform for generating random data, colors, IDs, and ha
 - Download specefic resolution favicon.
 - Download all images at ones.
 
+### 8. **Optical Character Recognition**
+
+- Extract text from images with high accuracy.
+- Copy extracted texts to clipboard.
+
 ## Tech Stack
 
 - **Frontend:** Nextjs
